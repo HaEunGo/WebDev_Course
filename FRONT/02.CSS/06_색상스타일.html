@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색상 스타일</title>
+    <style>
+        body {
+            /* background-color: hotpink; */
+            /* background-color: #A1b893; */
+            /* background-color: rgb(243, 241, 84); */
+            /* background-color: rgba(243, 241, 84, .53); */
+            /* background-color: hsl(30, 30%, 50%); */
+            background-color: hsla(30, 30%, 50%, .6);
+        }
+
+        #div-bg {
+            width: 50%;
+            background-color: #A2a385;
+        }
+
+        .div-clip {
+            background-color: white;
+            margin: 30px;
+            padding: 30px;
+            width: 40%;
+            border: 15px dashed rgba(0, 0, 0, 0.2);
+        }
+
+        #div-clip1 {
+            background-clip: border-box;
+        }
+
+        #div-clip2 {
+            background-clip: padding-box;
+        }
+
+        #div-clip3 {
+            background-clip: content-box;
+        }
+
+        #div-bg-img {
+            border: 15px solid rgba(0, 0, 0, 0.2);
+            width: 70%;
+            height: 800px;
+            padding: 50px;
+            background-image: url("../resources/image/bgsample.PNG");
+
+            /* 이미지 반복 설정 */
+            /* background-repeat: repeat; */
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            background-repeat: no-repeat;
+
+            /* 이미지 크기 설정 */
+            /* background-size: auto; */
+            /* background-size: contain; */
+            /* background-size: cover; */
+            /* background-size: 300px 200px; */
+            /* background-size:100% 100%; */
+
+            /* 이미지의 위치 설정 */
+            /* background-position: left-top; */
+            /* background-position: right-top; */
+            /* background-position: left center; */
+            /* background-position: right center; */
+            /* background-position: center center; */
+            /* background-position: center; */
+            /* background-position: left bottom; */
+            /* background-position: right bottom; */
+            /* background-position: center bottom; */
+            /* background-position: 200px 100px; */
+            /* background-position: 50% 50%; */
+            
+            /* 이미지의 배치 기준 설정 */
+            /* background-origin: padding-box; */
+            /* background-origin: border-box; */
+            /* background-origin: content-box; */
+
+            /* 이미지를 고정하도록 설정 */
+            /* background-attachment: scroll; */
+            background-attachment: fixed;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>색상 스타일</h1>
+
+    <hr>
+
+    <h2>background-color</h2>
+    <div id="div-bg">
+        11월의 첫날인 오늘 아침,
+
+        중부 지방을 중심으로 안개가 짙게 끼면서 시야가 무척 답답했습니다.
+
+        안개는 기온이 오르며 서서히 걷히겠고, 낮 동안 대체로 맑은 날씨를 보이겠습니다.
+
+        다만, 점차 중국발 스모그가 유입되며 서쪽 지역의 미세먼지 농도가 짙어질 것으로 보이니까요,
+
+        이 지역에 계신 분들은 미세먼지용 마스크를 착용해주시기 바랍니다.
+
+        오늘 중부 지방은 구름만 다소 지나겠고, 남부 지방은 맑은 하늘이 이어지겠습니다.
+
+        다만, 낮 한때 충남 남부와 호남 서쪽 지역에는 빗방울이 떨어지는 곳이 있겠습니다.
+
+        오늘 낮 기온은 서울 16도로 어제보다 4도 낮아 선선하겠고,
+
+        부산 23도, 광주는 20도 등 남부지방은 어제만큼 온화하겠습니다.
+
+        한 주간 대체로 맑겠지만, 내일과 모레 아침 공기가 반짝 쌀쌀해지겠고요,
+
+        입동인 일요일과 월요일 사이, 전국에 비가 내린 뒤 날이 급격히 추워질 전망입니다.
+
+        가을에서 겨울로 넘어가는 문턱에서 기온변화가 무척 심합니다.
+
+        면역력이 떨어지기 쉬운 만큼 충분한 휴식과 수분 섭취로 건강 잘 챙기시기 바랍니다.
+
+        지금까지 YTN 홍나실입니다.
+    </div>
+
+    <hr>
+
+    <h2>background-clip</h2>
+    <div class="div-clip" id="div-clip1">
+        11월의 첫날인 오늘 아침,
+
+        중부 지방을 중심으로 안개가 짙게 끼면서 시야가 무척 답답했습니다.
+
+        안개는 기온이 오르며 서서히 걷히겠고, 낮 동안 대체로 맑은 날씨를 보이겠습니다.
+
+        다만, 점차 중국발 스모그가 유입되며 서쪽 지역의 미세먼지 농도가 짙어질 것으로 보이니까요,
+
+        이 지역에 계신 분들은 미세먼지용 마스크를 착용해주시기 바랍니다.
+
+        오늘 중부 지방은 구름만 다소 지나겠고, 남부 지방은 맑은 하늘이 이어지겠습니다.
+
+        다만, 낮 한때 충남 남부와 호남 서쪽 지역에는 빗방울이 떨어지는 곳이 있겠습니다.
+
+        오늘 낮 기온은 서울 16도로 어제보다 4도 낮아 선선하겠고,
+
+        부산 23도, 광주는 20도 등 남부지방은 어제만큼 온화하겠습니다.
+
+        한 주간 대체로 맑겠지만, 내일과 모레 아침 공기가 반짝 쌀쌀해지겠고요,
+
+        입동인 일요일과 월요일 사이, 전국에 비가 내린 뒤 날이 급격히 추워질 전망입니다.
+
+        가을에서 겨울로 넘어가는 문턱에서 기온변화가 무척 심합니다.
+
+        면역력이 떨어지기 쉬운 만큼 충분한 휴식과 수분 섭취로 건강 잘 챙기시기 바랍니다.
+
+        지금까지 YTN 홍나실입니다.
+    </div>
+
+
+    <div class="div-clip" id="div-clip2">
+        11월의 첫날인 오늘 아침,
+
+        중부 지방을 중심으로 안개가 짙게 끼면서 시야가 무척 답답했습니다.
+
+        안개는 기온이 오르며 서서히 걷히겠고, 낮 동안 대체로 맑은 날씨를 보이겠습니다.
+
+        다만, 점차 중국발 스모그가 유입되며 서쪽 지역의 미세먼지 농도가 짙어질 것으로 보이니까요,
+
+        이 지역에 계신 분들은 미세먼지용 마스크를 착용해주시기 바랍니다.
+
+        오늘 중부 지방은 구름만 다소 지나겠고, 남부 지방은 맑은 하늘이 이어지겠습니다.
+
+        다만, 낮 한때 충남 남부와 호남 서쪽 지역에는 빗방울이 떨어지는 곳이 있겠습니다.
+
+        오늘 낮 기온은 서울 16도로 어제보다 4도 낮아 선선하겠고,
+
+        부산 23도, 광주는 20도 등 남부지방은 어제만큼 온화하겠습니다.
+
+        한 주간 대체로 맑겠지만, 내일과 모레 아침 공기가 반짝 쌀쌀해지겠고요,
+
+        입동인 일요일과 월요일 사이, 전국에 비가 내린 뒤 날이 급격히 추워질 전망입니다.
+
+        가을에서 겨울로 넘어가는 문턱에서 기온변화가 무척 심합니다.
+
+        면역력이 떨어지기 쉬운 만큼 충분한 휴식과 수분 섭취로 건강 잘 챙기시기 바랍니다.
+
+        지금까지 YTN 홍나실입니다.
+    </div>
+
+    <div class="div-clip" id="div-clip3">
+        11월의 첫날인 오늘 아침,
+
+        중부 지방을 중심으로 안개가 짙게 끼면서 시야가 무척 답답했습니다.
+
+        안개는 기온이 오르며 서서히 걷히겠고, 낮 동안 대체로 맑은 날씨를 보이겠습니다.
+
+        다만, 점차 중국발 스모그가 유입되며 서쪽 지역의 미세먼지 농도가 짙어질 것으로 보이니까요,
+
+        이 지역에 계신 분들은 미세먼지용 마스크를 착용해주시기 바랍니다.
+
+        오늘 중부 지방은 구름만 다소 지나겠고, 남부 지방은 맑은 하늘이 이어지겠습니다.
+
+        다만, 낮 한때 충남 남부와 호남 서쪽 지역에는 빗방울이 떨어지는 곳이 있겠습니다.
+
+        오늘 낮 기온은 서울 16도로 어제보다 4도 낮아 선선하겠고,
+
+        부산 23도, 광주는 20도 등 남부지방은 어제만큼 온화하겠습니다.
+
+        한 주간 대체로 맑겠지만, 내일과 모레 아침 공기가 반짝 쌀쌀해지겠고요,
+
+        입동인 일요일과 월요일 사이, 전국에 비가 내린 뒤 날이 급격히 추워질 전망입니다.
+
+        가을에서 겨울로 넘어가는 문턱에서 기온변화가 무척 심합니다.
+
+        면역력이 떨어지기 쉬운 만큼 충분한 휴식과 수분 섭취로 건강 잘 챙기시기 바랍니다.
+
+        지금까지 YTN 홍나실입니다.
+    </div>
+
+    <hr>
+
+    <h2>
+        background-image,
+        background-repeat,
+        background-size,
+        background-position,
+        background-attachiment
+    </h2>
+
+    <div id="div-bg-img"></div>
+
+    <br><br><br><br><br>
+</body>
+</html>
