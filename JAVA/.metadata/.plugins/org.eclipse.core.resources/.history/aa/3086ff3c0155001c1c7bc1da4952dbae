@@ -1,0 +1,13 @@
+package com.kh.lambda;
+
+public class Application {
+
+	public static void main(String[] args) {
+		/*
+		 * 람다식 (Lambda Expressions)
+		 * 	- 자바에서 함수적 프로그래밍을 위해서 자바 8부터 람다식을 지원한다.
+		 * 
+		 */
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;09_Polymorphism/src/com.kh.chap1.polymorphism&apos;&#x0A;- Original project: &apos;08_Inherit&apos;&#x0A;- Destination element: &apos;09_Polymorphism/src/com.kh.chap1.polymorphism&apos;&#x0A;- Original elements:&#x0A;     com.kh.inherit.after.Desktop.java&#x0A;     com.kh.inherit.after.Product.java&#x0A;     com.kh.inherit.after.Tv.java&#x0A;     com.kh.inherit.after.SmartPhone.java" description="Copy compilation units" destination="=09_Polymorphism/src&lt;com.kh.chap1.polymorphism" element1="/src&lt;com.kh.inherit.after{Desktop.java" element2="/src&lt;com.kh.inherit.after{Product.java" element3="/src&lt;com.kh.inherit.after{Tv.java" element4="/src&lt;com.kh.inherit.after{SmartPhone.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1630892683782" units="4" version="1.0"/>
+</session>

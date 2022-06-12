@@ -1,0 +1,18 @@
+package com.kh.lambda;
+
+public class Application {
+
+	public static void main(String[] args) {
+		
+		Student student = new Student("홍길동", 20, "남자");
+//		Student student2 = new Student("댕댕이", 20, "남자");
+		Student student2 = new Student("홍길동", 20, "남자");
+
+		System.out.println(student);
+		System.out.println(student.equals(student2));
+		System.out.println(student.hashCode());
+		System.out.println(student2.hashCode());
+
+	}
+
+}

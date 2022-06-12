@@ -1,0 +1,22 @@
+package com.kh.stream.terminal;
+
+public class B_Aggregate {
+	/*
+	 * 기본 집계
+	 * 	- 최종 처리 기능으로 요소들을 처리해서 카운팅, 합계, 평균값, 최대값, 최소값 등과 같이 하나의 값으로 산출하는 것을 말한다.
+	 * 	- count()
+	 * 	- sum()
+	 * 	- average()
+	 * 	- max()
+	 * 	- min()
+	 * 	- findFirst()
+	 * 
+	 * 커스텀 집계
+	 * 
+	 * 
+	 * Optional 클래스
+	 * 
+	 * 
+	 * 
+	 */
+}

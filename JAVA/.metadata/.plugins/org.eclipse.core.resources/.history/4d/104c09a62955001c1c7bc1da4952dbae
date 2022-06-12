@@ -1,0 +1,59 @@
+package com.kh.lambda.basic;
+
+import com.kh.lambda.basic.functional.A_FuncInterface;
+import com.kh.lambda.basic.functional.B_FuncInterface;
+import com.kh.lambda.basic.functional.C_FuncInterface;
+
+public class B_Functional {
+	
+	public void method1() {
+		A_FuncInterface fi = () -> {
+//			// 코드 블록이기 때문에 변수 선언과 찍어보는 것도 가능하다.
+//			String str = "매개변수와 반환값이 없어요~~";
+			
+			System.out.println("매개변수와 반환값이 없는 람다식 1");
+			
+//			System.out.println(str);
+		};
+		
+//		람다식 실행은 추상 메소드 호출하는 것 처럼 해주면 된다.
+		fi.method();
+		
+//		실행문이 한 줄이라면 중괄호({})를 생략할 수 있다.
+		fi = () -> System.out.println("매개변수와 반환값이 없는 람다식 2");
+		
+		fi.method();
+		
+//		fi = new A_Functional() {
+//			
+//			@Override
+//			public void method() {
+//				System.out.println("익명 구현 객체를 통한 인터페이스 구현");
+//			}
+//		};
+//		
+//		위와 동일한 호출 방법 : fi.method();
+	}
+	
+	public void method2() {
+		B_FuncInterface fi = (int a) -> {
+			System.out.println(a * a);
+		};
+		
+		fi.method(5);
+		
+		// 매개변수의 자료형을 생략 가능
+		// 매개변수가 하나이면 괄호()를 생략 가능
+		fi = a -> System.out.println(a * 5);
+		
+		fi.method(10);
+		
+	}
+	
+	public void method3() {
+		int result = 0;
+		C_FuncInterface fi = (int x, int y) -> {
+			return x + y;
+		};
+	}
+}

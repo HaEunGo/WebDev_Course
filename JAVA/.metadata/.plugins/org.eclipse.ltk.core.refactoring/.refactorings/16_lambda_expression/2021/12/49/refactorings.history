@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.kh.lambda.basic.functional.B_Functional&apos; to &apos;B_FuncInterface&apos;&#x0A;- Original project: &apos;16_lambda_expression&apos;&#x0A;- Original element: &apos;com.kh.lambda.basic.functional.B_Functional&apos;&#x0A;- Renamed element: &apos;com.kh.lambda.basic.functional.B_FuncInterface&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;B_Functional&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.kh.lambda.basic.functional{B_Functional.java[B_Functional" matchStrategy="1" name="B_FuncInterface" qualified="false" references="true" similarDeclarations="false" stamp="1638638412749" textual="false" version="1.0"/>
+</session>

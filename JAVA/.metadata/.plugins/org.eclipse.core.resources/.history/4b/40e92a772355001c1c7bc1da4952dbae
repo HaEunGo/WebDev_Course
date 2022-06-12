@@ -1,0 +1,26 @@
+package com.kh.lambda.basic;
+
+import com.kh.lambda.basic.functional.A_Functional;
+
+public class B_Functional {
+	
+	public void method1() {
+		A_Functional fi = () -> {
+			System.out.println("매개변수와 반환값이 없는 람다식1");
+		};
+		
+		fi.method();
+		
+//		fi = new A_Functional() {
+//			
+//			@Override
+//			public void method() {
+//				System.out.println("매개변수와 반환값이 없는 람다식1");
+//				
+//			}
+//		};
+//		
+//		위와 동일한게 fi.method();
+//		fi.method();
+	}
+}

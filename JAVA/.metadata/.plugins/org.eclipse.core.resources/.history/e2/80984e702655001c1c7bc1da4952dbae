@@ -1,0 +1,5 @@
+package com.kh.lambda.basic.functional;
+
+public interface B_Functional {
+
+}

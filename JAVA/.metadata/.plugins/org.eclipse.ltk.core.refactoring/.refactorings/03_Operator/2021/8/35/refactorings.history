@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.kh.operator.practice.B_inDecrease&apos; to &apos;B_InDecrease&apos;&#x0A;- Original project: &apos;03_Operator&apos;&#x0A;- Original element: &apos;com.kh.operator.practice.B_inDecrease&apos;&#x0A;- Renamed element: &apos;com.kh.operator.practice.B_InDecrease&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;B_inDecrease&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.kh.operator.practice{B_inDecrease.java[B_inDecrease" matchStrategy="1" name="B_InDecrease" qualified="false" references="true" similarDeclarations="false" stamp="1629767238093" textual="false" version="1.0"/>
+</session>

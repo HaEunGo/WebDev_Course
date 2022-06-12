@@ -1,0 +1,14 @@
+package com.kh.stream.terminal;
+
+public class A_Match {
+	/*
+	 * 매칭
+	 * 	- 최종 처리 단계에서 요소들이 특정 조건에 만족하는지 조사하는 기능이다.
+	 * 	- allMatch()
+	 * 		- 모든 요소들이 매개 값으로 주어진 Predicate의 조건을 만족하는지 조사한다.
+	 * 	- anyMatch()
+	 * 		- 최소한 한 개의 요소라도 매개 값으로 주어진 Predicate의 조건을 만족하는지 조사한다.
+	 * 	- nonMatch()
+	 * 		- 모든 요소들이 매개 값으로 주어진 Predicate의 조건을 만족하지 는지 조사한다.
+	 */
+}

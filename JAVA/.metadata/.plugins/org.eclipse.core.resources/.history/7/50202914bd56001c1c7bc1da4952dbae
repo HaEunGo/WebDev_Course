@@ -1,0 +1,29 @@
+package com.kh.stream.terminal;
+
+public class B_Aggregate {
+	/*
+	 * 기본 집계
+	 * 	- 최종 처리 기능으로 요소들을 처리해서 카운팅, 합계, 평균값, 최대값, 최소값 등과 같이 하나의 값으로 산출하는 것을 말한다.
+	 * 	- count() : 요소의 개수를 리턴한다.
+	 * 	- sum() : 요소들의 합계를 리턴한다.
+	 * 	- average() : 요소들의 평균을 리턴한다.
+	 * 	- max() : 최대 요소를 리턴한다.
+	 * 	- min() : 최소 요소를 리턴한다.
+	 * 	- findFirst() : 첫 번째 요소를 리턴한다.
+	 * 
+	 * 커스텀 집계
+	 * 	- 스트림에서 기본 집계 메소드를 제공하지만 다양한 집계 결과물을 만들 수 있도록 reduce() 메소드를 제공한다.
+	 * 		- 매개 타입으로 XXXOperator
+	 * 		- 리턴 타입으로 OptionalXXX
+	 * 
+	 * 
+	 * Optional 클래스
+	 * 
+	 * 
+	 * 
+	 */
+	
+	public void method1() {
+		
+	}
+}
