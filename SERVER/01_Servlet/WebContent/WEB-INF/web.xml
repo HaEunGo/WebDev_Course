@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	배포 서술자(Deployment Descriptor)
+	배포 서술자는 Java EE 스펙으로 개발되는 웹 애플리케이션의 기본적인 설정을 위해 작성하는 파일이다. (Servlet, Filter 등)
+ -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee; http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>01_Servlet</display-name>
+  <!-- 
+  	welcome-file
+  		- 디렉토리의 기본 웹 페이지이다.
+  		- 클라이언트가 리소스(html, 서블릿 등)의 이름을 생략하고 디렉토리까지만 지정해서 요청한다면
+  		  웹 서버는 해당 디렉토리에서 웰컴 파일을 찾아서 응답한다.
+   -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 서블릿 등록(톰캣에게 서블릿 정보를 알려주는 것) -->
+  <servlet>
+  	<servlet-name>first</servlet-name>					<!-- xml내에서 서블릿 이름 지정 -->
+  	<servlet-class>com.kh.servlet;</servlet-class>		<!-- 해당하는 이름을 가지는 class파일 지정 : 패키지 전체 이름으로 지정해줘야 함 -->
+  </servlet>
+  
+  <!-- 등록한 서블릿을 URL 주소와 연결시켜줘야 한다. (mapping) -->
+  <!-- 
+  	http://localhost:8088/01_Servlet/first.do
+  	
+  	http://localhost:8088/01_Servlet/까지만 입력하면 톰캣에서 01_Servlet에 접근하기 위한 경로라고 보면 된다.
+  	index.html을 적지 않고 /까지만 입력해도 자동으로 찾게 해주는데 welcome-file-list에 나와있는 기본 파일들을 찾아주기 때문이다.
+  	/까지만 입력하면 WebContent까지만 접속하게 됨
+  	
+  	http:// : 프로토콜
+  	localhost:8088 : 서버에 대한 정보(서버와 서버 안에 올라가있는 애플리케이션 정보 - 톰캣)
+  	01_Servlet : 애플리케이션의 명칭 (Context - 톰캣에 올라가 있는 애플리케이션의 명칭)
+  	first.do : 서블릿을 실행시키기 위한 주소
+   -->
+   <!-- 사용자가 url요청을 하면 설정된 서블릿(servlet-name)을 연결해주는 작업 -->
+   <servlet-mapping>
+   	<servlet-name>first</servlet-name>
+    <url-pattern>/first.do</url-pattern>
+   </servlet-mapping>
+   
+</web-app>
