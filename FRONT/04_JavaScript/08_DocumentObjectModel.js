@@ -39,6 +39,7 @@ btn2.addEventListener('click', () => {
 // Node 객체 삭제
 let btn3 = document.getElementById('btn3');
 
+// event는 다른 이름으로도 변경도 가능하다.
 btn3.addEventListener('click', (event) => {
     // 직접 읽어와서 삭제하는 법
     document.getElementById('area1').remove();

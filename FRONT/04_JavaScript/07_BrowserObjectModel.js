@@ -19,6 +19,7 @@ btn2.addEventListener('click', () => {
     let timerId = 0;
     let newWindow = window.open();
 
+    // 새로운 창에서의 alert
     newWindow.alert('3초 후에 이 페이지는 종료됩니다.');
 
     // 일정 시간 후에 콜백 함수를 한 번 실행
